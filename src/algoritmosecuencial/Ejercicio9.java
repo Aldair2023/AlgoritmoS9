@@ -104,6 +104,8 @@ public class Ejercicio9 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtMontoF, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 140, 40));
+
+        txtValorL.setEditable(false);
         jPanel1.add(txtValorL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 200, 40));
 
         txtMontoI.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -162,7 +164,7 @@ public class Ejercicio9 extends javax.swing.JFrame {
         
         txtMontoI.requestFocusInWindow();
         }
-        catch(Exception e){
+        catch(Exception l){
             JOptionPane.showMessageDialog(null,"hay digitos mal escritos, por favor verifique de nuevo", "ERROR",JOptionPane.INFORMATION_MESSAGE);
         }
     
@@ -178,8 +180,6 @@ public class Ejercicio9 extends javax.swing.JFrame {
     }//GEN-LAST:event_cmdBorrarActionPerformed
 
     private void txtMontoIKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMontoIKeyTyped
-        char c=evt.getKeyChar();
-        
         if(!Character.isDigit(evt.getKeyChar())&& evt.getKeyChar() != '.'){
             getToolkit();
             
@@ -188,8 +188,6 @@ public class Ejercicio9 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtMontoIKeyTyped
 
     private void txtMontoFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMontoFKeyTyped
-        char c=evt.getKeyChar();
-        
         if(!Character.isDigit(evt.getKeyChar())&& evt.getKeyChar() != '.'){
             getToolkit();
             
